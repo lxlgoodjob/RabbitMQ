@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: provider
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #消息确认配置项
+      #开启消息的return机制
+    publisher-returns: true
+      #开启消息的confirm机制
+    publisher-confirm-type: correlated
+
